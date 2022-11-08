@@ -1,0 +1,17 @@
+.current {
+    color: var(--accept-color);
+    
+    &::after {
+  color: var(--accept-color);
+  position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+   background-color: #2196f3;
+}
+}
+
