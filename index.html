@@ -26,10 +26,10 @@
 
     <!-- HEADER -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__block">
-        <!-- <section class="top-menu"> -->
-          <!-- <nav class="nav">
+        <section class="top-menu"> 
+            <nav class="nav">
             <a href="./index.html" class="logo">Web<span class="logo__text--black">Studio</span></a>
             <ul class="nav__list">
               <li class="nav__item">
@@ -42,9 +42,9 @@
                 <a href="./index.html" class="nav__link">Контакти</a>
               </li>
             </ul>
-          </nav> -->
+          </nav>
 
-          <!-- <ul class="contact__list">
+          <ul class="contact__list">
             <li class="contact__item">
               <a href="mailto:minfo@devstudio.com" class="contact__link">
                 <svg class="contact__icon" width="16" height="12">
@@ -62,9 +62,8 @@
               >
             </li>
           </ul>
-        </section> -->
-      <!-- </div>
-    </header> --> -->
+          </div>
+    </header>
 
     <!-- HERO -->
 
@@ -141,21 +140,24 @@
           <ul class="list">
             <li>
               <div class="list__band">
-              <img src="./images/1.jpg" alt="розробка програм гаджетах" width="370" />
+              <img srcset="./images/1.jpg 1x, ./images/do-1-2x.jpg 2x"
+              src="./images/1.jpg" alt="розробка програм гаджетах" width="370" />
               <p class="list__text">Десктопні додатки</p>
             </div>
             </li>
 
             <li>
               <div class="list__band">
-              <img src="./images/2.jpg" alt="розробка програм гаджетах" width="370" />
+              <img srcset="./images/2.jpg 1x, ./images/do-2-2x.jpg 2x"
+              src="./images/2.jpg" alt="розробка програм гаджетах" width="370" />
               <p class="list__text">Мобільні додатки</p>
               </div>
             </li>
 
             <li>
               <div class="list__band">
-              <img src="./images/3.jpg" alt="розробка програм гаджетах" width="370" />
+              <img srcset="./images/3.jpg 1x, ./images/do-3-2x.jpg 2x"
+              src="./images/3.jpg" alt="розробка програм гаджетах" width="370" />
               <p class="list__text">Дизайнерські рішення</p>
             </div>
             </li>
@@ -168,7 +170,23 @@
           <h2 class="team-title title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img src="./images/4.jpg" alt="член команди" width="270" />
+              <picture>
+                <source srcset="./images/team/desk.jpg 1x, 
+                ./images/team/desk-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/team/tab.jpg 1x, 
+                ./images/team/tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/team/mob-1.jpg 1x, 
+                ./images/team/mob-1-2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img 
+              src="./images/team/4.jpg" alt="член команди" width="450" />
+              
+              </picture>
+              <!-- <img 
+              src="./images/team/4.jpg" alt="член команди" width="450" /> -->
+              
               <div class="team-lead">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-activity">Product Designer</p>
@@ -206,7 +224,22 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/5.jpg" alt="член команди" width="270" />
+              <picture>
+                <source srcset="./images/team/desk-2.jpg 1x, 
+                ./images/team/desk-2-2x.jpg 2x
+                media="(min-width: 1200px)">
+                <source srcset="./images/team/tab-2.jpg 1x, 
+                ./images/team/tab-2-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/team/mob-2.jpg 1x, 
+                ./images/team/mob-2-2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img 
+              src="./images/team/5.jpg" alt="член команди" width="450" />
+              </picture>
+              
+              <!-- <img srcset="./images/5.jpg 1x, ./images/team-2-2x.jpg 2x"
+              src="./images/5.jpg" alt="член команди" width="270" /> -->
               <div class="team-lead">
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-activity">Frontend Developer</p>
@@ -244,7 +277,22 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/6.jpg" alt="член команди" width="270" />
+              <picture>
+                <source srcset="./images/team/desk-3.jpg 1x, 
+                ./images/team/-3-2x.jpg 2x
+                media="(min-width: 1200px)">
+                <source srcset="./images/team/tab-3.jpg 1x, 
+                ./images/team/tab-3-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/team/mob-3.jpg 1x, 
+                ./images/team/mob-3-2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img 
+              src="./images/team/6.jpg" alt="член команди" width="450" />
+              </picture>
+              
+              <!-- <img srcset="./images/6.jpg 1x, ./images/team-3-2x.jpg 2x"
+              src="./images/6.jpg" alt="член команди" width="270" /> -->
               <div class="team-lead">
                 <h3 class="team-name">Микола Тарасов</h3>
                 <p lang="en" class="team-activity">Marketing</p>
@@ -282,7 +330,22 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/7.jpg" alt="член команди" width="270" />
+              <picture>
+                <source srcset="./images/team/desk-4.jpg 1x, 
+                ./images/team/desk-4-2x.jpg 2x
+                media="(min-width: 1200px)">
+                <source srcset="./images/team/tab-4.jpg 1x, 
+                ./images/team/tab-4-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/team/mob-4.jpg 1x, 
+                ./images/team/mob-4-2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img 
+              src="./images/team/7.jpg" alt="член команди" width="450" />
+              </picture>
+              
+              <!-- <img srcset="./images/7.jpg 1x, ./images/team-4-2x.jpg 2x"
+               src="./images/7.jpg" alt="член команди" width="270" /> -->
               <div class="team-lead">
                 <h3 class="team-name">Михайло Єрмаков</h3>
                 <p lang="en" class="team-activity">UI Designer</p>

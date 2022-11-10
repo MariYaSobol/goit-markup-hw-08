@@ -7,12 +7,15 @@
 }
 
 .nav {
+  display: flex;
   align-items: center;
 }
 
-// .top-menu {
-//  @extend %equalizer;
-//  }
+.top-menu {
+ @extend %equalizer;
+ display: flex;
+ align-items: center;
+ }
 
 .logo {
   display: block;
@@ -32,7 +35,11 @@
 
 .nav__list {
   list-style-type: none;
-  margin-left: 93px;
+  // margin-left: 93px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav__item:not(:last-child) {

@@ -10,13 +10,51 @@
   linear-gradient(to right,
   rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)),
-  url(../images/desk-over.jpg);
+  url(../images/over/desk-over.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  
+
+  @media screen and (min-width: 480px) {
+    background-image: 
+  linear-gradient(to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../images/over/mob-over.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: url(../images/over/mob-over-2x.jpg);
+    }
+
+  @media screen and (min-width: 768px) {
+    background-image: 
+  linear-gradient(to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../images/over/tab-over.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: url(../images/over/tab-over-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: 
+  linear-gradient(to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../images/over/desk-over.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: url(../images/over/desk-over-2x.jpg);
+    }
+  }
+ }
 }
 
 .hero__title {
@@ -25,13 +63,24 @@
   // font-size: 44px;
   // line-height: 1.36;
   font-size: 26px;
-  line-height: 1.61px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
+
+ @media screen and (min-width: 1200px) {
+    // width: 1200px;
+    font-size: 44px;
+  line-height: 1.36;
+  }
+
+}
+
+.logo {
+  margin-left: 92px;
 }
 
 .hero__btn {

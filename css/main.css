@@ -1,4 +1,4 @@
-.portfolio-thumb-text, .action-btn, .footer-net-link, .client__link, .client__list, .net-link, .list__text, .feature-icon, .modal__button, .check, .modal__btn, .contact__list, .header__block {
+.portfolio-thumb-text, .action-btn, .footer-net-link, .client__link, .client__list, .net-link, .list__text, .feature-icon, .modal__button, .check, .modal__btn, .contact__list, .top-menu, .header__block {
   display: flex;
   align-items: center;
 }
@@ -46,7 +46,6 @@ address {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -123,6 +122,9 @@ body {
   --hidden-color: #188ce8;
   --timing: 250ms;
   --cubic-bezier: (0.4, 0, 0.2, 1);
+  --bg-gradient: linear-gradient(to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4));
 }
 
 .header {
@@ -130,6 +132,12 @@ body {
 }
 
 .nav {
+  display: flex;
+  align-items: center;
+}
+
+.top-menu {
+  display: flex;
   align-items: center;
 }
 
@@ -151,7 +159,10 @@ body {
 
 .nav__list {
   list-style-type: none;
-  margin-left: 93px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav__item:not(:last-child) {
@@ -230,25 +241,65 @@ body {
 .hero__overlay {
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desk-over.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/desk-over.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/mob-over.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url(../images/over/mob-over-2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/tab-over.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url(../images/over/tab-over-2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 1200px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/desk-over.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url(../images/over/desk-over-2x.jpg);
+  }
+}
 
 .hero__title {
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.logo {
+  margin-left: 92px;
 }
 
 .hero__btn {
