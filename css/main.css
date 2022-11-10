@@ -163,6 +163,7 @@ body {
   margin-left: auto;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: 93px;
 }
 
 .nav__item:not(:last-child) {
@@ -298,8 +299,11 @@ body {
   }
 }
 
-.logo {
-  margin-left: 92px;
+.contact__list {
+  list-style-type: none;
+  margin-left: auto;
+  gap: 30px;
+  margin-left: 315px;
 }
 
 .hero__btn {

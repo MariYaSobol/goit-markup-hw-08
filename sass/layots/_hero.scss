@@ -79,9 +79,17 @@
 
 }
 
-.logo {
-  margin-left: 92px;
+.contact__list {
+  list-style-type: none;
+  margin-left: auto;
+  @extend %equalizer;
+  gap: 30px;
+  margin-left: 315px;
 }
+
+// .logo {
+//   margin-left: 92px;
+// }
 
 .hero__btn {
   color: var(--primary-bg-color);
