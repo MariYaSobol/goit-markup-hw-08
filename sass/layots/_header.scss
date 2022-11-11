@@ -7,14 +7,11 @@
 }
 
 .nav {
-  display: flex;
   align-items: center;
 }
 
 .top-menu {
  @extend %equalizer;
- display: flex;
- align-items: center;
  }
 
 .logo {
@@ -35,14 +32,8 @@
 
 .nav__list {
   list-style-type: none;
-  // margin-left: 93px;
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-    flex-wrap: wrap;
-    margin-left: 93px;
+  margin-left: 93px;
 }
-
 
 .nav__item:not(:last-child) {
   margin-right: 50px;
