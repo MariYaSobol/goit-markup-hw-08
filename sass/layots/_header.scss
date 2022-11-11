@@ -2,9 +2,9 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header__block {
-  @extend %equalizer;
-}
+// .header__block {
+//   @extend %equalizer;
+// }
 
 .nav {
   align-items: center;
@@ -33,6 +33,23 @@
 .nav__list {
   list-style-type: none;
   margin-left: 93px;
+
+  .nav__list {
+  list-style-type: none;
+  margin-left: 93px;
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 }
 
 .nav__item:not(:last-child) {
@@ -63,7 +80,7 @@
 .contact__list {
   list-style-type: none;
   margin-left: auto;
-  @extend %equalizer;
+  // @extend %equalizer;
   gap: 30px;
 }
 
