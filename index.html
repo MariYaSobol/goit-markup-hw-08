@@ -27,6 +27,146 @@
     <!-- HEADER -->
 
     <header class="header">
+    <div class="container header__block">
+      <section class="top-menu">
+        <nav class="nav">
+          <a href="./index.html" class="logo">Web<span class="logo__text--black">Studio</span></a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link current">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <a href="mailto:minfo@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open">
+            <use href="./images/symbol-defs.svg#icon-menu" width="40" height="40"></use>
+          </svg>
+        </button>
+      </section>
+    </div>
+
+    <!--------------------------------------Мобільне меню---------------------------------------------->
+    
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu__container">
+        <div class="mob-menu__buttom">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close">
+              <use href="./images/symbol-defs.svg#icon-menu-close" width="40" height="40px"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list list-styles">
+            <li class="mob-menu__item"><a class="mob-menu__link link-text mob-current" href="./index.html">Студія</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link-text" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mob-menu__item"><a class="mob-menu__link link-text" href="">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu__top">
+          <ul class="mob-menu__contact list-styles">
+            <li class="mob-menu__contact--tel">
+              <a class="mob-menu__tel mob-menu__link link-text" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="mob-menu__contact--mail">
+              <a class="mob-menu__mail mob-menu__link link-text" href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
+            </li>
+          </ul>
+          <div class="mob-container-icon">
+            <ul class="list mob-list-icon">
+              <li class="mob-link-icon">
+                <a href="" class="mob-address-icon">
+                  instagram
+                </a>
+              </li>
+              <li class="mob-link-icon">
+                <a href="" class="mob-address-icon">
+                  twitter
+                </a>
+              </li>
+              <li class="mob-link-icon">
+                <a href="" class="mob-address-icon">
+                  facebook
+                </a>
+              </li>
+              <li class="mob-link-icon">
+                <a href="" class="mob-address-icon">
+                  linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- 
+    <header class="header">
+    <div class="container header__block">
+      <section class="section top-menu">
+        <nav class="nav">
+          <a href="./index.html" class="logo">Web<span class="logo__text--black">Studio</span></a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link current">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <a href="mailto:minfo@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+        <!-- <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open">
+            <use href="./images/symbol-defs.svg#icon-menu" width="40" height="40"></use>
+          </svg>
+        </button> -->
+    <!-- </div> -->
+
+    <!-- <header class="header">
       <div class="container header__block">
         <section class="top-menu"> 
             <nav class="nav">
@@ -62,8 +202,8 @@
               >
             </li>
           </ul>
-          </div>
-    </header>
+          </div> -->
+    <!-- </header> --> -->
 
     <!-- HERO -->
 
@@ -519,7 +659,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal__btn"  data-modal-close>
               <svg class="close" width="30" height="30">
@@ -534,61 +674,62 @@
                 <label class="modal__name">Ім'я
                   <!-- <span class="form-name">Ім'я</span> -->
                   <!-- <div class="modal-info"> -->
-                    <!-- <input type="text" class="input modal__input">
+                    <input type="text" class="input modal__input">
                     <svg class="modal__icon" width="18" height="18">
                      <use href="./images/symbol-defs.svg#icon-person-black-18dp-1-1"></use>
                     </svg>
                   <!-- </div> -->
-                <!-- </label> --> -->
+                </label>
 
-                <!-- <label class="modal__name">Телефон
+                <label class="modal__name">Телефон
                   <!-- <span class="form-name"></span> -->
                   <!-- <div class="modal-info"> -->
-                    <!-- <input type="tel" class="input modal__input">
+                    <input type="tel" class="input modal__input">
                     <svg class="modal__icon" width="18" height="18">
                      <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1-1"></use>
                     </svg>
                   <!-- </div> -->
-                <!-- </label> --> -->
+                </label>
 
-                <!-- <label class="modal__name">Пошта
+                <label class="modal__name">Пошта
                   <!-- <span class="form-name"></span> -->
                   <!-- <div class="modal-info"> -->
-                    <!-- <input type="email" class="input modal__input">
+                    <input type="email" class="input modal__input">
                     <svg class="modal__icon" width="18" height="18">
                      <use href="./images/symbol-defs.svg#icon-email-black-18dp-1-1"></use>
                     </svg>
                   <!-- </div> -->
-                <!-- </label> --> --> -->
+                </label>
 
-                <!-- <label class="modal__name">
+                <label class="modal__name">
                   Коментар
                   <textarea name="comment" rows="5"
                   placeholder="Введіть текст" 
                   class="modal__comment"></textarea>
-                </label> -->
+                </label>
 
-                <!-- <label class="check">
+                <label class="check">
                   <input type="checkbox" name="checkbox" class="check__text" required>
-                  <span class="check__icon"> -->
+                  <span class="check__icon">
                     <!-- <svg>
                       <use href="./images/symbol-defs.svg#icon-icon-check-1"></use>
                     </svg> -->
-                  <!-- </span>
+                  </span>
                   <span>Погоджуюся з розсилкою та приймаю
                     <a href="" class="condition">Умови договору</a>
                   </span>
-                </label> -->
+                </label>
 
-                <!-- <button type="submit" class="button modal__button">Відправити</button>
+                <button type="submit" class="button modal__button">Відправити</button>
 
-              </form> -->
- -->
-<!-- 
+              </form>
+
+
             </div>  
-          </div> --> -->
+          </div>
           
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
   </body>
 </html>
