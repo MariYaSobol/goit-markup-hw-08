@@ -285,14 +285,16 @@ body {
 }
 
 .hero__overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 768px;
+  max-height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/desk-over.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+  height: 400px;
+  padding: 118px 0;
 }
 @media screen and (min-width: 480px) {
   .hero__overlay {
@@ -306,6 +308,7 @@ body {
 }
 @media screen and (min-width: 480px) and (min-width: 768px) {
   .hero__overlay {
+    max-width: 1200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/tab-over.jpg);
   }
 }
@@ -316,6 +319,8 @@ body {
 }
 @media screen and (min-width: 480px) and (min-width: 1200px) {
   .hero__overlay {
+    max-width: 1600px;
+    max-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/desk-over.jpg);
   }
 }
@@ -332,13 +337,14 @@ body {
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -393,6 +399,15 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.25);
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
 }
 
 .modal__btn {
@@ -577,6 +592,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 676px) {
+  .feature-title {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .feature-text {
   color: var(--primary-text-color);
@@ -589,7 +610,6 @@ body {
 .list {
   list-style-type: none;
   display: flex;
-  gap: 30px;
 }
 
 .work {
@@ -749,7 +769,7 @@ body {
 }
 
 .client__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -761,6 +781,11 @@ body {
 .client__link:hover, .client__link:focus {
   color: var(--accept-color);
   border-color: var(--accept-color);
+}
+@media screen and (min-width: 480px) {
+  .client__link {
+    max-width: 290px;
+  }
 }
 
 .footer {
@@ -852,6 +877,9 @@ body {
   }
 }
 
+.join-block {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .join-block {
     margin-right: auto;
@@ -870,10 +898,6 @@ body {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-}
-
-.team-net {
-  margin-bottom: 60px;
 }
 
 .footer-net-link {
@@ -1036,9 +1060,16 @@ body {
 
 .menu {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
+  margin-right: 15px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .menu-list {
@@ -1187,6 +1218,8 @@ body {
 }
 
 .menu-close-btn {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   background-color: transparent;
   border: none;
@@ -1259,6 +1292,7 @@ body {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196F3;
+  text-decoration: none;
 }
 
 .mob-list-icon {

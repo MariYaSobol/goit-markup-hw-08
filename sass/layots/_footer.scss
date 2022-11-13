@@ -93,7 +93,7 @@ color: var(--accept-color);}
 }
 
 .join-block {
-  // margin-left: 70px;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
        margin-right: auto;
     margin-left: 165px;
@@ -114,16 +114,6 @@ margin-bottom: 20px;
     justify-content: center;
 }
 
-// .team-net {
-//   display: flex;
-//     justify-content: center;
-//     @media screen and (min-width: 480px){
-//     margin-bottom: 60px;
-// }}
-
-.team-net {
-  margin-bottom: 60px;
-}
 
 .footer-net-link {
 @extend %equalizer;
