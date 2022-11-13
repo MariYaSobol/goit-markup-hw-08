@@ -301,7 +301,7 @@ body {
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: url(../images/over/mob-over-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/mob-over-2x.jpg);
   }
 }
 @media screen and (min-width: 480px) and (min-width: 768px) {
@@ -311,7 +311,7 @@ body {
 }
 @media screen and (min-width: 480px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: url(../images/over/tab-over-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/tab-over-2x.jpg);
   }
 }
 @media screen and (min-width: 480px) and (min-width: 1200px) {
@@ -321,7 +321,7 @@ body {
 }
 @media screen and (min-width: 480px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: url(../images/over/desk-over-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/over/desk-over-2x.jpg);
   }
 }
 
@@ -836,8 +836,27 @@ body {
   color: var(--accept-color);
 }
 
+@media screen and (min-width: 768px) {
+  .adress-block {
+    margin-left: auto;
+  }
+}
+
 .jion {
   align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .jion {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-block {
+    margin-right: auto;
+    margin-left: 165px;
+  }
 }
 
 .jion-title {
@@ -877,6 +896,13 @@ body {
 .action {
   margin-left: auto;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .action {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .action-title {

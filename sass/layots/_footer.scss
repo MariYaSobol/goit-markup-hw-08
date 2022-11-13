@@ -77,14 +77,29 @@ color: var(--accept-color);}
   color: var(--accept-color);
 }
 
+.adress-block {
+   @media screen and (min-width: 768px) {
+     margin-left: auto;
+   }
+}
+
 .jion {
   // display: flex;
    align-items: baseline;
+
+   @media screen and (min-width: 768px) {
+         display: flex;
+    flex-wrap: wrap;}
 }
 
-// .join-block {
-//   margin-left: 70px;
-// }
+.join-block {
+  // margin-left: 70px;
+  @media screen and (min-width: 768px) {
+       margin-right: auto;
+    margin-left: 165px;
+   }
+    
+}
 
 .jion-title {
 font-style: normal;
@@ -134,6 +149,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .action {
   margin-left: auto;
   text-align: center;
+  @media screen and (min-width: 768px)
+ {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 
 // .action-mail {
